@@ -18,4 +18,25 @@
       directory="static"
       />
 
+  <!-- View to get the image of minisite !-->
+  <browser:page
+      name="logoview"
+      for="..interfaces.IMinisite"
+      class=".views.LogoView"
+      template="templates/logoview.pt"
+      layer="..interfaces.IPloneconfMinisiteLayer"
+      permission="zope2.View"
+      />
+
+  <!-- Viewlet to override logo in minisites !-->
+  <browser:viewlet
+      name="plone.logo"
+      for="..interfaces.IMinisite"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="plone.app.layout.viewlets.common.LogoViewlet"
+      template="templates/logo.pt"
+      layer="..interfaces.IPloneconfMinisiteLayer"
+      permission="zope2.View"
+      />
+
 </configure>
