@@ -1,0 +1,2 @@
+# ploneconf.minisite
+Plone addon
