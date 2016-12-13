@@ -1,0 +1,12 @@
+configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ploneconf.minisite">
+
+  <plone:behavior
+      title="Minisite"
+      description="Marker interface for minisites to be able to bind views to."
+      provides="..interfaces.IMinisite"
+      />
+
+</configure>
