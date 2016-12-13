@@ -1,0 +1,5 @@
+====================
+ploneconf.minisite
+====================
+
+User documentation
