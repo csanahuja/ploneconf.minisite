@@ -35,4 +35,11 @@
       factory=".setuphandlers.HiddenProfiles"
       name="ploneconf.minisite-hiddenprofiles" />
 
+
+  <subscriber
+      for=".interfaces.IMinisite
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".create.createContent"
+      />
+
 </configure>
