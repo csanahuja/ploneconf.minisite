@@ -12,7 +12,18 @@
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
- <property name="allowed_content_types"/>
+ <property name="allowed_content_types">
+  <element value="Document"/>
+  <element value="minisite"/>
+  <element value="Image"/>
+  <element value="Collection"/>
+  <element value="Event"/>
+  <element value="Link"/>
+  <element value="File"/>
+  <element value="Discussion Item"/>
+  <element value="News Item"/>
+  <element value="Folder"/>
+ </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">view</property>
  <property name="view_methods">

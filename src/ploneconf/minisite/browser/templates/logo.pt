@@ -1,0 +1,4 @@
+<object data="${python:view.image()}" type="image/png">
+    <img src="http://localhost:8080/Plone/logo.png" alt="Plone site" title="Plone site"/>         
+</object>
+
