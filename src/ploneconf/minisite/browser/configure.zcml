@@ -22,7 +22,7 @@
   <!-- Viewlet to override logo in minisites -->
   <browser:viewlet
       name="plone.logo"
-      for="..interfaces.IMinisite"
+      for="*"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.LogoViewlet"
       template="templates/logo.pt"
