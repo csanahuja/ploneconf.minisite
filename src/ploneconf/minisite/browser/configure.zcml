@@ -30,4 +30,14 @@
       permission="zope2.View"
       />
 
+   <!-- Default view to minisite Dexterity Type !-->
+   <browser:page
+      name="minisite"
+      for="..interfaces.IMinisite"
+      class=".views.MinisiteView"
+      template="templates/minisite.pt"
+      layer="..interfaces.IPloneconfMinisiteLayer"
+      permission="zope2.View"
+      />
+
 </configure>

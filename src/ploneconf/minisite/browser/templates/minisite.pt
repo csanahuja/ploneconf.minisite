@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="ploneconf.minisite">
+<body>
+  <metal:content-core fill-slot="content-core">
+
+ <metal:content-core fill-slot="content-core">
+
+<h3> News </h3>
+ <table class="listing"
+         id="news"
+         tal:define="news python:view.news()">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr tal:repeat="new news">
+        <td>
+            ${python:new['title']}
+        </td>
+        <td>
+            ${python:new['description']}
+        </td>
+     
+      </tr>
+      <tr tal:condition="not:news">
+        <td colspan=5>
+            No news yet
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  </metal:content-core>
+</body>
+</html>
