@@ -14,8 +14,10 @@ class MinisiteView(DefaultView):
         for brain in brains:    
             results.append({
                 'title': brain.Title,
-                'description': "nothing",
+                'description': brain.Description,
+                'url': brain.getURL()
                 })
+
 
         return results
 

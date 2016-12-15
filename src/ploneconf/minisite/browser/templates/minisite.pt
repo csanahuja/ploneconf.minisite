@@ -19,7 +19,9 @@
     <tbody>
       <tr tal:repeat="new news">
         <td>
-            ${python:new['title']}
+            <a href="${python:new['url']}">
+                ${python:new['title']}
+            </a>
         </td>
         <td>
             ${python:new['description']}
