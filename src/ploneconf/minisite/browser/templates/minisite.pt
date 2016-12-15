@@ -20,7 +20,7 @@
       <tr tal:repeat="new news">
         <td>
             <a href="${python:new['url']}">
-                ${python:new['title']}
+            ${python:new['title']}
             </a>
         </td>
         <td>
